@@ -151,7 +151,7 @@ const FormFieldComponent = Component.extend({
   }),
 
   _nameForObject() {
-    return get(this, 'modelName') || guidFor(get(this, 'object'));
+    return guidFor(get(this, 'object'));
   },
 
   getModelName() {
